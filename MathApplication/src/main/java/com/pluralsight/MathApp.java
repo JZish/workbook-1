@@ -39,7 +39,7 @@ public class MathApp {
         */
         double radius = 7.25;
 
-        double area = Math.PI * radius;
+        double area = Math.PI * Math.pow(radius, 2);
 
         System.out.println("The area of this circle is " + area);
 
@@ -57,9 +57,9 @@ public class MathApp {
 
         System.out.println("---------------------------------");
 
-        /*
-        Find and display the distance between the points (5, 10) and (85, 50)
-        */
+
+        //Find and display the distance between the points (5, 10) and (85, 50)
+
 
         int x1 = 5;
         int y1 = 10;
@@ -72,9 +72,9 @@ public class MathApp {
 
         System.out.println("---------------------------------");
 
-        /*
-        Find and display the absolute (positive) value of a variable after it is set to -3.8
-        */
+
+        //Find and display the absolute (positive) value of a variable after it is set to -3.8
+
 
         double value = -3.8;
 
