@@ -22,7 +22,11 @@ public class PayrollCalculator {
 
         float grossPay = hours * pay;
 
-        System.out.println("The gross pay for " + name + " is: " + "$" + grossPay);
+        if (hours > 40) {
+            System.out.println("The gross pay for " + name + " is: " + "$" + (grossPay * 1.5f));
+        } else {
+            System.out.println("The gross pay for " + name + " is: " + "$" + grossPay);
+        }
 
 
 
