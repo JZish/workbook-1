@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SandwichShop {
+public class sandwichShop {
 
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
