@@ -29,12 +29,24 @@ public class payrollCalculator {
         //calculate the gross pay
         double grossPay = hoursWorked * payRate;
 
-        //output with printf
-        System.out.printf("%s made $%.2f in gross pay", name, grossPay);
+        //output with printf & format specifiers (%s -tring %f -loat)
+        //printf to keep decimal place specification and neatness
+        System.out.printf("%s made $%.2f in gross pay\n", name, grossPay);
 
         //output with println
         System.out.println(name + " made $" + grossPay + " in gross pay");
 
+        if (hoursWorked > 40) {
+            double overtimeHours = hoursWorked - 40;
+            double overtimePay = overtimeHours * payRate * 1.5;
+            grossPay += overtimePay;
+
+            System.out.println("Overtime hours: " + overtimeHours);
+            System.out.printf("\nOvertime pay: $%.2f", overtimePay);
+            System.out.printf("\nGross with OT pay: $%.2f", grossPay);
+        }
+
+        myScanner.close();
 
     }
 
